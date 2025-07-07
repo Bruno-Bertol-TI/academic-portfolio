@@ -1,0 +1,213 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* CABEÇALHO */
+header {
+  background-color: #242424;
+  color: #fff;
+  padding: 20px;
+}
+
+.autor-container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.autor-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.perfil img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.autor h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.autor p {
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* NAVEGAÇÃO */
+.autor-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.autor-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.autor-nav a:hover {
+  color: #00bcd4;
+}
+
+/* SEÇÕES PRINCIPAIS */
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.titulos-principais {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+  border-left: 5px solid #00bcd4;
+  padding-left: 10px;
+}
+
+.texto-principal {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* HABILIDADES */
+.habilidades-container,
+.habilidades-icons {
+  margin-bottom: 30px;
+}
+
+.habilidades-lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+}
+
+.habilidades-lista li a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #00bcd4;
+  color: white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.habilidades-lista li a:hover {
+  background-color: #0097a7;
+}
+
+/* ÍCONES DE HABILIDADES */
+.habilidades-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.habilidades-icons-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.habilidades-icons-lista .icon {
+  transition: transform 0.3s ease;
+}
+
+.habilidades-icons-lista .icon:hover {
+  transform: scale(1.2);
+}
+
+.habilidades-icons-lista img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* PROJETOS */
+.projetos-lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projetos-lista li {
+  margin-bottom: 10px;
+}
+
+.projetos-lista a {
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.projetos-lista a:hover {
+  text-decoration: underline;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .autor-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .autor-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .habilidades-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .habilidades-icons-lista {
+    gap: 15px;
+  }
+}
